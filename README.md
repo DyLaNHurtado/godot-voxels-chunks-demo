@@ -14,6 +14,7 @@ Bienvenido a esta guía para **principiantes**. Aquí aprenderás cómo funciona
 - **Minecraft** – Cada bloque es un voxel editable.  
 - **7 Days to Die** – Mundo voxel con destrucción total.  
 - **Space Engineers** – Construcción/destrucción de naves voxel.  
+- **Tear down** – Sandbox con entornos completamente destructibles.  
 - **Vintage Story** – Sandbox voxel realista.
 
 ---
@@ -48,7 +49,8 @@ Bienvenido a esta guía para **principiantes**. Aquí aprenderás cómo funciona
 - Más **costoso computacionalmente** que los voxels cúbicos.
 
 🎮 **Ejemplos famosos con marching cubes**:
-- **Astroneer** – Terreno redondeado y editable en tiempo real.  
+- **Astroneer** – Terreno redondeado y editable en tiempo real.
+- **Donkey Kong Bananza** – Destruccion redondeado y editable en tiempo real.
 - **Planet Nomads** – Mundo alienígena editable y suave.  
 - **Astral Terra** – Terreno orgánico voxel.
 
@@ -63,6 +65,7 @@ En 2D, no hablamos de voxels sino de **tiles** (baldosas o celdas).
 🎮 **Ejemplos famosos en 2D**:
 - **Terraria** – Mundo 2D destructible con tiles.  
 - **Starbound** – Sandbox 2D con tiles modificables.  
+- **Stardew Valley** – Mundo 2D con tiles modificables.
 - **Forager** – Mundo basado en tiles para farming y construcción.
 
 ---
@@ -83,10 +86,10 @@ Si tu mundo es **estático** o solo quieres “decorar”, es mejor usar **malla
 
 | Técnica                | Ideal para…                             | Ejemplos famosos                  |
 |------------------------|----------------------------------------|------------------------------------|
-| Voxels cúbicos         | Terreno editable en 3D estilo Minecraft | Minecraft, 7 Days to Die          |
-| Marching Cubes         | Terreno suave, fluido y orgánico       | Astroneer, Planet Nomads          |
+| Voxels cúbicos         | Terreno editable en 3D estilo lego | Minecraft, Tear down        |
+| Marching Cubes         | Terreno suave, fluido y orgánico       | Astroneer, Donkey Kong Bananza    |
 | Tiles (2D)             | Terreno editable 2D                    | Terraria, Starbound               |
-| Mallas estáticas       | Terreno sin edición, gráfico realista  | Witcher 3, Skyrim, Hollow Knight  |
+| Mallas estáticas(3D) o Tiles estaticos(2D)   | Terreno sin edición  | Witcher 3, Skyrim, Hollow Knight...  |
 
 ---
 
