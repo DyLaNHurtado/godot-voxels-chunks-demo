@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://b43v81lamdxh1"]
+
+[ext_resource type="Script" uid="uid://livu5fgtt5j7" path="res://scripts/VoxelBlock.gd" id="1_4g0qc"]
+[ext_resource type="Material" uid="uid://p7n6iafnj5do" path="res://materials/cesped_material_3d.tres" id="1_rbnwv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ip1vj"]
+material = ExtResource("1_rbnwv")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5cyth"]
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_ip1vj")
+script = ExtResource("1_4g0qc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_5cyth")

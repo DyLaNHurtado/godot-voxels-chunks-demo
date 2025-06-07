@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://7uhht0dcwhtx"]
+
+[ext_resource type="Script" uid="uid://cu3bffiri6f5o" path="res://scripts/Player.gd" id="1_p0vlq"]
+[ext_resource type="Script" uid="uid://b3d0uyx4p1cut" path="res://scripts/RayCast.gd" id="2_v6fml"]
+[ext_resource type="PackedScene" uid="uid://b18hpewdopru6" path="res://scenes/VoxelDirt.tscn" id="3_3li8b"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v6fml"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_p0vlq"]
+
+[sub_resource type="Skin" id="Skin_v6fml"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+collision_layer = 2
+input_capture_on_drag = true
+platform_floor_layers = 4294901761
+platform_wall_layers = 4
+script = ExtResource("1_p0vlq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_v6fml")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_p0vlq")
+skin = SubResource("Skin_v6fml")
+skeleton = NodePath("../..")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+
+[node name="ThirdPersonCamera" type="Camera3D" parent="CameraPivot"]
+auto_translate_mode = 1
+transform = Transform3D(1, 0, 0, 0, 0.907777, 0.419452, 0, -0.419452, 0.907777, 0, 4, 4)
+
+[node name="MainCamera" type="Camera3D" parent="CameraPivot"]
+auto_translate_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -0.5)
+
+[node name="RayCast3D" type="RayCast3D" parent="CameraPivot"]
+collision_mask = 7
+script = ExtResource("2_v6fml")
+dirt_block_scene = ExtResource("3_3li8b")

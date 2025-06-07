@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmvrdklsb8klq"]
+
+[ext_resource type="Script" uid="uid://bppmikggsm8cc" path="res://scripts/Chunk.gd" id="1_3txbk"]
+[ext_resource type="PackedScene" uid="uid://b43v81lamdxh1" path="res://scenes/VoxelGrass.tscn" id="2_01iku"]
+[ext_resource type="PackedScene" uid="uid://b18hpewdopru6" path="res://scenes/VoxelDirt.tscn" id="3_unaa7"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_3txbk")
+floor_block_scene = ExtResource("2_01iku")
+dirt_block_scene = ExtResource("3_unaa7")
